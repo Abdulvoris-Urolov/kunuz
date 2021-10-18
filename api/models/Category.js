@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
             required: true,
         }
     },
-      { timestamps:true }
+    { timestamps:true }
 );
 
 module.exports = mongoose.model("Category", CategorySchema);

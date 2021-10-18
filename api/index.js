@@ -8,7 +8,6 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 
-
 dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true, })
@@ -38,7 +37,7 @@ app.use("/api/categories", categoryRoute);
 app.use("/", (req, res) =>{
     console.log('main url');
 });
-//console.log('Abdulvoris');
+console.log('Abdulvoris');
 
 
 app.listen("2000", (req, res) =>{
